@@ -1,3 +1,39 @@
 <header>
-    This is the header
+    
+    
+   <div>
+        <% if(locals.user){ %>
+          <div class="h-in-out-up-prof">
+
+            <div>Codeial</div>
+            <div class="alternate">
+              <div >
+                <a href="/users/profile"> <%= user.name%></a>
+              </div>
+              <div>
+                <a href="/users/sign-out">Sign Out </a>
+              </div>
+          </div>
+          </div>
+        <% }else{ %>
+          <div class="h-in-out-up-prof">
+
+            <div>Codeial</div>
+            <div class="alternate">
+              <div>
+                <a href="/users/sign-in"> Sign In</a>
+              </div>
+              <div>
+                <a href="/users/sign-up"> Sign Up</a>
+              </div>
+          </div>
+          </div>
+          
+            
+        <%}%>    
+   </div>
+
 </header>
+
+
+

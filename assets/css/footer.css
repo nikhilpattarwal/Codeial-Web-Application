@@ -1,0 +1,16 @@
+footer {
+  background-color: yellow;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  footer div {
+    display: flex;
+    justify-content: space-around; }
+    footer div div {
+      font-weight: bold;
+      font-size: 5vh;
+      display: flex;
+      align-items: last baseline; }
+      footer div div div {
+        padding: 0 1vh 0 3vh;
+        font-size: 3vh; }
