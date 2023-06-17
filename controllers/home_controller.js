@@ -1,9 +1,10 @@
-const post = require('../models/post');
+const Post = require('../models/post');
 
 module.exports.home = function(req, res){
 
-    post.find({}).populate('user')
+    Post.find({}).populate('user')
     .then(function(posts){
+        console.log(posts);
         return res.render('home',{
             title: "Codeial | Home",
             posts: posts
